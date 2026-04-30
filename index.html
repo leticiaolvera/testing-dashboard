@@ -1,13 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myclaudeproject</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Testing Dashboards</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; padding: 40px; }
+  h1 { font-size: 28px; font-weight: 700; color: #f1f5f9; }
+  .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+  a { display: block; background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 28px 36px; text-decoration: none; color: inherit; min-width: 260px; transition: border-color .2s, background .2s; }
+  a:hover { background: #263348; border-color: #60a5fa; }
+  a h2 { font-size: 18px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px; }
+  a p { font-size: 13px; color: #64748b; }
+  .tag { display: inline-block; margin-top: 14px; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; background: #1e3a5f; color: #60a5fa; }
+</style>
+</head>
+<body>
+  <div style="text-align:center">
+    <h1>Testing Dashboards</h1>
+    <p style="margin-top:8px;color:#64748b">Select a dashboard to view</p>
+  </div>
+  <div class="cards">
+    <a href="dashboard.html">
+      <h2>Testing Status</h2>
+      <p>Test cases, pass rate, execution rate, coverage by area, user story coverage, defect tracking</p>
+      <span class="tag">Stakeholders &amp; ExCo</span>
+    </a>
+    <a href="stc-dashboard.html">
+      <h2>Load, Performance &amp; Automation</h2>
+      <p>Response time, throughput, error rate, automation progress, sprint trends, stability</p>
+      <span class="tag">STC Call</span>
+    </a>
+  </div>
+</body>
 </html>
